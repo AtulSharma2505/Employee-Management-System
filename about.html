@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/empapp">EmpManage</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/empapp">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/empapp/about">About Us</a>
+          </li>
+          
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <body>
+    {% load static %}
+    <div class="container mt-3">
+        <main>
+
+            <section class="py-5 text-center container">
+              <div class="row py-lg-5">
+                <div class="col-lg-6 col-md-8 mx-auto">
+                  <h1 class="fw-light">Employee Management System</h1>
+                  <p class="lead text-body-secondary">An employee management system or EMS is a tool that helps improve employee satisfaction and productivity to help a company achieve their overall goals.</p>
+                  <p>
+                    <a href="/empapp" class="btn btn-primary my-2">Main call to action</a>
+                    <a href="/empapp/add_emp" class="btn btn-secondary my-2">Secondary action</a>
+                  </p>
+                </div>
+              </div>
+            </section>
+          
+            <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+              <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center ">
+                <div class="my-3 py-3">
+                  <h2 class="display-5">What is database?</h2>
+                  <p class="lead">Database management refers to the actions that businesses take to work with and process their data, which can include creating, validating, retrieving, updating, maintaining, linking, aligning, archiving, and deleting data when it’s no longer needed.</p>
+                </div>
+                <div class="bg-body-tertiary shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+                  <img src="{% static 'OIP.jpg'%}" alt="Tech image" class="center" height="300px" width="100%">
+                </div>
+              </div>
+              <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center ">
+                <div class="my-3 py-3">
+                  <h2 class="display-5">Ensures Employee Management [EMS]</h2>
+                  <p class="lead">An EMS offers various ways to improve workplace motivation and increase employee productivity. With these systems, employers can easily monitor and evaluate employees' progress. Such systems help employees feel confident and encourage them to develop a cordial relationship with the organisation.</p>
+                </div>
+                <div class="bg-body-tertiary shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+                  <img src="{% static 'OIP (1).jpg'%}" alt="Manage image" class="center" height="100%" width="100%">
+                </div>
+              </div>
+            </div>
+
+            <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+              <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center ">
+                <div class="my-3 py-3">
+                  <h2 class="display-5">Optimises internal processes</h2>
+                  <p class="lead">Managing different HR processes is challenging and time-consuming, but an EMS can help optimise internal processes. An EMS eliminate the requirement of using several tools.</p>
+                </div>
+                <div class="bg-body-tertiary shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+                  <img src="{% static 'download.jpg'%}" alt="Tech image" class="center" height="300px" width="100%">
+                </div>
+              </div>
+              <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center ">
+                <div class="my-3 py-3">
+                  <h2 class="display-5">Who should be responsible for maintaining and updating the Employee Management System?</h2>
+                  <p class="lead">The responsibility for maintaining and updating the Employee Management System typically falls to the HR department, often in collaboration with the IT department. HR is responsible for ensuring the system is being used effectively and that employee data is accurate and up-to-date.</p>
+                </div>
+                <div class="bg-body-tertiary shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+                  <img src="{% static 'OIP (2).jpg'%}" alt="Manage image" class="center" height="100%" width="100%">
+                </div>
+              </div>
+            </div>
+          
+          </main>
+          
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+  </body>
+  <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <p class="col-md-4 mb-0 text-body-secondary">&copy; 2024 Company, Inc</p>
+  
+      <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+      </a>
+  
+      <ul class="nav col-md-4 justify-content-end">
+        <li class="nav-item"><a href="/empapp" class="nav-link px-2 text-body-secondary">Home</a></li>
+        
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+        <li class="nav-item"><a href="/empapp/about" class="nav-link px-2 text-body-secondary">About</a></li>
+      </ul>
+    </footer>
+  </div>
+  
+</html>
